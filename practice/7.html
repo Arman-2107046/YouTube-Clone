@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* Set the background color and font for the entire page */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style for the first cat picture with rounded corners */
+        .cat-picture {
+            width: 200px;
+            border-radius: 15px;
+        }
+
+        /* Style for the second cat picture with fixed dimensions and centered object position */
+        .cat-picture2 {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Style for the third cat picture with circular border */
+        .cat-picture3 {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+
+        /* Style for the search bar input field */
+        .search-bar {
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+
+        /* Style for the email input field */
+        .email {
+            width: 400px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+
+        /* Style for the "Agree & Join" button */
+        .agree-join-button {
+            background-color: #0056b3;
+            color: white;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 50px;
+            border: none;
+            width: 400px;
+            font-size: large;
+        }
+
+        /* Style for the profile picture in the tweet section */
+        .profile-picture {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            vertical-align: middle;
+            border-radius: 25px;
+            margin-right: 5px;
+        }
+
+        /* Style for the text input field in the tweet section */
+        .text-box {
+            font-size: 18px;
+            border: none;
+            width: 300px;
+            vertical-align: middle;
+        }
+
+        /* Style for the tweet button */
+        .tweet-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cat picture with rounded corners -->
+    <img class="cat-picture" src="image.png" alt="Cat Picture" />
+
+    <!-- Cat picture with fixed dimensions and centered object position -->
+    <img class="cat-picture2" src="image.png" alt="Cat Picture" />
+
+    <!-- Cat picture with circular border -->
+    <img class="cat-picture3" src="image.png" alt="Cat Picture" />
+
+    <br /><br /><br />
+    <hr />
+
+    <!-- Search bar input field -->
+    <input type="text" placeholder="Search" class="search-bar" />
+
+    <br /><br /><br />
+    <hr />
+
+    <div>
+        <!-- Email input field with label -->
+        <label for="">Email</label><br />
+        <input type="email" class="email" />
+
+        <!-- Privacy policy agreement text -->
+        <p>
+            By clicking Agree & Join, you can agree to the
+            <a href="#">Privacy Policy.</a>
+        </p>
+
+        <!-- Agree & Join button -->
+        <button class="agree-join-button">Agree & Join</button>
+    </div>
+
+    <br /><br /><br />
+    <hr />
+
+    <div class="tweeter">
+        <!-- Profile picture for the tweet section -->
+        <img class="profile-picture" src="image.png" alt="Profile Picture" />
+
+        <!-- Text input field for tweet -->
+        <input type="text" class="text-box" placeholder="What's happening?" />
+
+        <!-- Tweet button -->
+        <button class="tweet-button">Tweet</button>
+    </div>
+</body>
+</html>

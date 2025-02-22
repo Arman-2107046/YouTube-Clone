@@ -1,204 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise Nine</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-      .card {
-        padding: 10px;
-        /* border: none; */
-        width: 300px;
-        border-width: 1px;
-        border: solid;
-        border-color: rgb(150, 150, 150);
-        padding-left: 15px;
-        padding-bottom: 20px;
 
-        /* box-shadow: 1px 1px 10px rgba(0,0,0,1); */
-      }
+        /* Style for the card component */
+        .card {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid rgb(150, 150, 150);
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
 
-      /* Style for the profile picture in the tweet section */
-      .profile-picture {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        vertical-align: middle;
-        border-radius: 25px;
-        margin-right: 5px;
-      }
+        /* Style for the profile picture in the tweet section */
+        .profile-picture {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            vertical-align: middle;
+            border-radius: 25px;
+            margin-right: 5px;
+        }
 
-      /* Style for the text input field in the tweet section */
-      .text-box {
-        font-size: 18px;
-        border: none;
-        width: 300px;
-        vertical-align: middle;
-      }
+        /* Style for the text input field in the tweet section */
+        .text-box {
+            font-size: 18px;
+            border: none;
+            width: 300px;
+            vertical-align: middle;
+        }
 
-      /* Style for the tweet button */
-      .tweet-button {
-        background-color: rgb(29, 155, 240);
-        color: white;
-        border: none;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border-radius: 30px;
-        font-size: 16px;
-        font-weight: bold;
-        vertical-align: middle;
-      }
+        /* Style for the tweet button */
+        .tweet-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
 
-      .tweeter{
-        box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+        /* Style for the tweeter section */
+        .tweeter {
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+            width: 450px;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-        width: 450px;
-        padding: 10px;
-        border-radius: 5px;
-      }
-      .dp{
-        width:200px;
-        height: 200px;
-        object-fit: cover;
-        object-position: center;
-      }
-      .name{
-        font-size: 16px;
-        font-weight: bold;
-        padding-left: 10px;
-        margin-bottom: 0px;
-        /* margin-top: 0; */
-      }
-      .mutual{
-       font-size: 14px;
-       padding-left: 10px;
-       margin-top: 4px; 
-       margin-bottom: 0px;
-      }
-      .add-friend-button{
-        font-size: 15px;
-        margin-top: 8px;
-        margin-left: 10px;
-            padding:8px 15px 8px 15px ;
+        /* Style for the display picture */
+        .dp {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Style for the name text */
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 10px;
+            margin-bottom: 0;
+        }
+
+        /* Style for the mutual friends text */
+        .mutual {
+            font-size: 14px;
+            padding-left: 10px;
+            margin-top: 4px;
+            margin-bottom: 0;
+        }
+
+        /* Style for the add friend button */
+        .add-friend-button {
+            font-size: 15px;
+            margin-top: 8px;
+            margin-left: 10px;
+            padding: 8px 15px;
             color: white;
             background-color: rgb(52, 65, 255);
             border: none;
             border-radius: 2px;
-      }
-      .person{
-        box-shadow:1px 1px 10px rgba(0,0,0,.4) ;
-        width: 200px;
-        padding-bottom: 10px;
-        display: inline-block;
-        margin: 5px;
-      }
+        }
 
+        /* Style for the person card */
+        .person {
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+            width: 200px;
+            padding-bottom: 10px;
+            display: inline-block;
+            margin: 5px;
+        }
 
-      .google-logo {
-        /* display: block; */
-      }
-      .search-bar {
-        border: none;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 16px;
-        padding-right: 16px;
-        font-size: 16px;
-        width: 500px;
-        border-radius: 30px;
-        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
-        /* display: block; */
-      }
-.search-button{
-    padding: 8px 15px 8px 15px ;
-    margin-top: 20px;
-    border: none;
-    margin-right: 10px;
+        /* Style for the Google logo */
+        .google-logo {
+            /* Additional styles can be added here */
+        }
 
-}
+        /* Style for the search bar */
+        .search-bar {
+            border: none;
+            padding: 12px 16px;
+            font-size: 16px;
+            width: 500px;
+            border-radius: 30px;
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+        }
 
-.google{
-    align-items: center;
-}
+        /* Style for the search button */
+        .search-button {
+            padding: 8px 15px;
+            margin-top: 20px;
+            border: none;
+            margin-right: 10px;
+        }
 
-div{
-    text-align: center;
-}
+        /* Style for the Google section */
+        .google {
+            align-items: center;
+        }
+
+        /* Center align text in div elements */
+        div {
+            text-align: center;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Card component with satisfaction question -->
     <div class="card">
-      <p class="title">Satisfied with our service?</p>
-      <button>yes</button>
-      <button>no</button>
+        <p class="title">Satisfied with our service?</p>
+        <button>Yes</button>
+        <button>No</button>
     </div>
 
     <br /><br /><br />
     <hr />
 
+    <!-- Tweeter section with profile picture, text input, and tweet button -->
     <div class="tweeter">
-      <!-- Profile picture for the tweet section -->
-      <img class="profile-picture" src="image.png" alt="Profile Picture" />
-
-      <!-- Text input field for tweet -->
-      <input type="text" class="text-box" placeholder="What's happening?" />
-
-      <!-- Tweet button -->
-      <button class="tweet-button">Tweet</button>
+        <img class="profile-picture" src="image.png" alt="Profile Picture" />
+        <input type="text" class="text-box" placeholder="What's happening?" />
+        <button class="tweet-button">Tweet</button>
     </div>
 
-<br><br><br><hr>
+    <br /><br /><br />
+    <hr />
 
-<div class="person">
-    <img src="cat1.jpg" alt="" class="dp">
-    <p class="name">Oliver</p>
-    <p class="mutual">2 mutual friends</p>
-    <button class="add-friend-button">Add Friend</button>
-</div>
+    <!-- Person cards with profile pictures, names, mutual friends, and add friend buttons -->
+    <div class="person">
+        <img src="cat1.jpg" alt="Profile Picture" class="dp" />
+        <p class="name">Oliver</p>
+        <p class="mutual">2 mutual friends</p>
+        <button class="add-friend-button">Add Friend</button>
+    </div>
 
-<div class="person">
-    <img src="cat3.jpg" alt="" class="dp">
-    <p class="name">Larry</p>
-    <p class="mutual">2 mutual friends</p>
-    <button class="add-friend-button">Add Friend</button>
-</div>
-<div class="person">
-    <img src="cat4.jpg" alt="" class="dp">
-    <p class="name">Tom</p>
-    <p class="mutual">2 mutual friends</p>
-    <button class="add-friend-button">Add Friend</button>
-</div>
+    <div class="person">
+        <img src="cat3.jpg" alt="Profile Picture" class="dp" />
+        <p class="name">Larry</p>
+        <p class="mutual">2 mutual friends</p>
+        <button class="add-friend-button">Add Friend</button>
+    </div>
 
-<br><br><br><hr>
+    <div class="person">
+        <img src="cat4.jpg" alt="Profile Picture" class="dp" />
+        <p class="name">Tom</p>
+        <p class="mutual">2 mutual friends</p>
+        <button class="add-friend-button">Add Friend</button>
+    </div>
 
-<div class="google">
+    <br /><br /><br />
+    <hr />
 
-    <img src="download.jpg" alt="" class="google-logo" />
-</div>
+    <!-- Google logo and search bar section -->
+    <div class="google">
+        <img src="download.jpg" alt="Google Logo" class="google-logo" />
+    </div>
 
-<div>
-    <input
-      class="search-bar"
-      type="text"
-      placeholder="Search GOOGLE or type a URL"
-    />
-</div>
+    <div>
+        <input class="search-bar" type="text" placeholder="Search GOOGLE or type a URL" />
+    </div>
 
-<div>
-<button class="search-button">Google Search</button>
-<button class="search-button">I'm Feeling Lucky</button>
-</div>
-
-
-
-
-
-
-
-  </body>
+    <div>
+        <button class="search-button">Google Search</button>
+        <button class="search-button">I'm Feeling Lucky</button>
+    </div>
+</body>
 </html>

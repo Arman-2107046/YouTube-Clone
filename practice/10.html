@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Nine</title>
+    <style>
+      /* General paragraph styling with fallback fonts */
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      /* Style for the display picture (profile image) */
+      .dp {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      /* Style for the name text */
+      .name {
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      /* Style for the add friend button */
+      .add-friend-button {
+        font-size: 15px;
+        margin-top: 8px;
+        margin-left: 10px;
+        padding: 8px 15px;
+        color: white;
+        background-color: rgb(52, 65, 255);
+        border: none;
+        border-radius: 2px;
+        margin-bottom: 10px;
+      }
+
+      /* Style for the mutual friends text */
+      .mutual {
+        font-size: 14px;
+        padding-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 0;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      /* Style for the mutual friends profile image */
+      .mutual-image {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+
+      /* Style for each profile card */
+      .profile {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        width: 200px;
+        display: inline-block;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container for profile cards, displayed horizontally using inline-block -->
+    <div class="profile">
+      <!-- Profile picture for Oliver -->
+      <img src="cat1.jpg" alt="Profile Picture" class="dp" />
+      <!-- Name of the profile -->
+      <p class="name">Oliver</p>
+
+      <!-- Mutual friends section with image and text -->
+      <div>
+        <img class="mutual-image" src="cat3.jpg" alt="" />
+        <p class="mutual">2 mutual friends</p>
+      </div>
+
+      <!-- Add Friend button for Oliver -->
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="profile">
+      <!-- Profile picture for Larry -->
+      <img src="cat2.jpg" alt="Profile Picture" class="dp" />
+      <!-- Name of the profile -->
+      <p class="name">Larry</p>
+
+      <!-- Mutual friends section with image and text -->
+      <div>
+        <img class="mutual-image" src="cat3.jpg" alt="" />
+        <p class="mutual">2 mutual friends</p>
+      </div>
+
+      <!-- Add Friend button for Larry -->
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="profile">
+      <!-- Profile picture for Ginger -->
+      <img src="cat3.jpg" alt="Profile Picture" class="dp" />
+      <!-- Name of the profile -->
+      <p class="name">Ginger</p>
+
+      <!-- Mutual friends section with image and text -->
+      <div>
+        <img class="mutual-image" src="cat3.jpg" alt="" />
+        <p class="mutual">2 mutual friends</p>
+      </div>
+
+      <!-- Add Friend button for Ginger -->
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+  </body>
+</html>

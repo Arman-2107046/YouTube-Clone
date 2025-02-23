@@ -46,10 +46,10 @@
       .mutual {
         font-size: 14px;
         padding-left: 10px;
-        margin-top: 4px;
+        margin-top: 12px;
         margin-bottom: 0;
         /* display: inline-block; */
-        vertical-align: middle;
+        /* vertical-align: middle; */
       }
 
       /* Style for the mutual friends profile image */
@@ -75,7 +75,13 @@
       .container {
         display: grid;
         grid-template-columns: 200px 200px 200px;
+        row-gap: 20px;
+        column-gap: 10px;
 
+      }
+      .mutual-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
     </style>
   </head>
@@ -90,7 +96,7 @@
         <p class="name">Oliver</p>
 
         <!-- Mutual friends section with image and text -->
-        <div>
+        <div class="mutual-grid">
           <img class="mutual-image" src="cat3.jpg" alt="" />
           <p class="mutual">2 mutual friends</p>
         </div>
@@ -106,7 +112,7 @@
         <p class="name">Larry</p>
 
         <!-- Mutual friends section with image and text -->
-        <div>
+        <div class="mutual-grid">
           <img class="mutual-image" src="cat3.jpg" alt="" />
           <p class="mutual">2 mutual friends</p>
         </div>
@@ -122,7 +128,7 @@
         <p class="name">Ginger</p>
 
         <!-- Mutual friends section with image and text -->
-        <div>
+        <div class="mutual-grid">
           <img class="mutual-image" src="cat3.jpg" alt="" />
           <p class="mutual">2 mutual friends</p>
         </div>

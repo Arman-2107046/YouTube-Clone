@@ -18,30 +18,42 @@
       rel="stylesheet"
     />
 
-
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video.css">
-  
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
   </head>
 
   <body>
+    <div class="header">
+      <div class="left-section">
+        <img src="icons/hamburger-menu.svg" class="hamburger-menu" alt="" />
+        <img  src="icons/youtube-logo.svg" class="youtube-logo" alt="" />
+      </div>
 
-<div class="header">
+      <div class="middle-section">
+        <input type="text" class="search-bar" placeholder="Search" />
 
-  <div class="left-section"> left-section</div>
+        <button class="search-button"><img src="icons/search.svg"  alt="" class="search-icon"/></button>
 
-  <div class="middle-section">
+        <button class="voice-search-button">
+          <img
+            src="icons/voice-search-icon.svg"
+            class="voice-search-icon"
+            alt=""
+          />
+        </button>
+      </div>
 
-    <input type="text" class="search-bar" placeholder="Search" />
+      <div class="right-section">
 
-  </div>
+        <img src="icons/upload.svg" class="uploads-icon" alt="">
+        <img src="icons/youtube-apps.svg" class="youtube-apps-icon" alt="">
+        <img src="icons/notifications.svg" class="notifications-icon" alt="">
+        <img src="channel-pictures/my-channel.jpeg" class="current-user-picture" alt="">
 
-  <div class="right-section"> right-section</div>
 
-
-</div>
-
+      </div>
+    </div>
 
     <div class="video-grid">
       <!-- video-1 -->
@@ -85,9 +97,7 @@
           </div>
 
           <div class="video-info">
-            <p class="video-title">
-              Try Not To Laugh Challenge #9
-            </p>
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
             <p class="video-author">Markiplier</p>
             <p class="video-stats">19M views · 4 years ago</p>
           </div>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        .img-cat{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* width: 300px; */
+            margin-bottom: 20px;
+        }
+        .btn-follow{
+
+            /* margin-left: 120px; */
+            color: white;
+            background-color: #0044ff;
+            padding: 5px 10px 5px 10px;
+            border: none;
+            border-radius: 3px;
+            /* font-weight: bold; */
+            font-size: 15px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="flexbox">
+      <div><img class="img-cat" src="cat1.jpg" alt="" /></div>
+
+      <div style="width: 200px;">
+        <p style="font-weight: bold;">Oliver</p>
+        <p style="font-size: 13px; color: rgb(70, 70, 70); margin-top:3px ; margin-bottom: 3px;">The Cat</p>
+        <p style="font-size: 13px; color: rgb(70, 70, 70);">Popular</p>
+      </div>
+      <div><button class="btn-follow">Follow</button></div>
+    </div>
+
+    <div class="flexbox">
+      <div><img class="img-cat" src="cat2.jpg" alt="" /></div>
+
+      <div style="width: 200px;">
+        <p style="font-weight: bold;">Larry</p>
+        <p style="font-size: 13px; color: rgb(70, 70, 70); margin-top:3px ; margin-bottom: 3px;">Sleeping Cat</p>
+        <p style="font-size: 13px; color: rgb(70, 70, 70);">Popular</p>
+      </div>
+      <div><button class="btn-follow">Follow</button></div>
+    </div>
+    <div class="flexbox">
+      <div><img class="img-cat" src="cat3.jpg" alt="" /></div>
+
+      <div style="width: 200px;">
+        <p style="font-weight: bold;">Ginger</p>
+        <p style="font-size: 13px; color: rgb(70, 70, 70); margin-top:3px ; margin-bottom: 3px;">The Cat</p>
+        <p style="font-size: 13px; color: rgb(70, 70, 70);">Popular</p>
+      </div>
+      <div><button class="btn-follow">Follow</button></div>
+    </div>
+  </body>
+</html>

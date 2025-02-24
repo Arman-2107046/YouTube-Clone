@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 200px;
+        }
+        .left-profile-image{
+           /* background-color: lightpink; */
+        }
+        .right-profile-content{
+            /* background-color: lightblue; */
+            width: 350px;
+        }
+        .img-profile{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-right: 5px;
+        }
+.first-row{
+    display: flex;
+    flex-direction: row;
+}
+.display-name{
+    font-weight: bold;
+}
+.account-name{
+    margin-left: 5px;
+}
+.second-row{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.third-row{
+    display: flex;
+    flex-direction: row;
+    /* height: 100px; */
+    /* background-color: lightpink; */
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.left-side-link{
+    background-color: rgb(215, 215, 215);
+    width: 130px;
+}
+.right-side-link{
+    /* background-color: lightblue; */
+    
+}
+.website{
+margin-top: 15px;
+margin-left: 12px;
+color: rgb(136, 136, 136);
+}
+.overview{
+
+    margin-top: 5px;
+    margin-left: 12px;
+    margin-bottom: 18px;
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="flexbox">
+
+      <div class="left-profile-image"> <img src="cat1.jpg" class="img-profile" alt=""></div>
+
+      <div class="right-profile-content">
+
+        <div class="first-row">
+            <div class="display-name">supersimple.dev</div>
+            <div class="account-name">@SuperSimpleDev</div>
+        </div>
+
+        <div class="second-row">What is backend web development? A complete overview. New video is up!
+        </div>
+
+        <div class="third-row">
+            <div class="left-side-link"></div>
+            <div class="right-side-link">
+
+                <div class="website">youtube.com</div>
+                <div class="overview">Backend web development -a complete overview(2021)</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

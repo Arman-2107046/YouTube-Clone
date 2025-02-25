@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .flexbox-container{
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 300px;
+
+
+        }
+        .left-side{
+            width: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(34, 34, 34);
+            padding-top: 15px;
+        }
+        .profile-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom:8px ;
+            object-fit: cover;
+            object-position: center;
+        }
+        .middle-side{
+            width: 200px;
+            background-color: rgb(56, 56, 56);
+            display: flex;
+            flex-direction: column;
+
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            padding-top: 13px;
+        }
+        .first-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .right-side{
+            width: 200px;
+            background-color: rgb(224, 224, 224);
+        }
+        .info{
+            color: white;
+            margin-bottom: 0;
+            margin-top: 0;
+
+        }
+        .add{
+
+            background-color: transparent;
+            border: none;
+            color:rgb(151, 151, 151) ;
+            font-size: 25px;
+            padding: 0;
+            cursor: pointer;
+            /* align-items: center; */
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="flexbox-container">
+      <div class="left-side">
+        <img src="cat1.jpg" alt="" class="profile-img">
+        <img src="cat2.jpg" alt="" class="profile-img">
+        <img src="cat3.jpg" alt="" class="profile-img">
+        
+      </div>
+
+      <div class="middle-side">
+        <div class="first-row">
+            <p class="info">INFO</p>
+            <button class="add">+</button>
+        </div>
+        <div class="rest-rows">
+            <p class="middle-lower-rows"># new-videos</p>
+            <p class="middle-lower-rows"># updates</p>
+            <p class="middle-lower-rows"># faq</p>
+        </div>
+      </div>
+
+      <div class="right-side"></div>
+    </div>
+  </body>
+</html>

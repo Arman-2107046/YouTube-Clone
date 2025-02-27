@@ -27,54 +27,101 @@
   <body>
     <div class="header">
       <div class="left-section">
-        <img src="icons/hamburger-menu.svg" class="hamburger-menu" alt="" />
-        <img src="icons/youtube-logo.svg" class="youtube-logo" alt="" />
+        <img src="icons/hamburger-menu.svg" class="hamburger-menu" alt="Menu Icon" />
+        <img src="icons/youtube-logo.svg" class="youtube-logo" alt="YouTube Logo" />
       </div>
 
       <div class="middle-section">
         <input type="text" class="search-bar" placeholder="Search" />
 
         <button class="search-button">
-          <img src="icons/search.svg" alt="" class="search-icon" />
+          <img src="icons/search.svg" alt="Search Icon" class="search-icon" />
+          <div class="tooltip">Search</div>
         </button>
 
         <button class="voice-search-button">
           <img
             src="icons/voice-search-icon.svg"
             class="voice-search-icon"
-            alt=""
+            alt="Voice Search Icon"
           />
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
 
       <div class="right-section">
-        <img src="icons/upload.svg" class="uploads-icon" alt="" />
-        <img src="icons/youtube-apps.svg" class="youtube-apps-icon" alt="" />
+        <div class="upload-item-container">
+          <img src="icons/upload.svg" class="uploads-icon" alt="Upload Icon" />
+          <div class="tooltip">Create</div>
+        </div>
+
+        <div class="youtube-apps-container">
+          <img src="icons/youtube-apps.svg" class="youtube-apps-icon" alt="YouTube Apps Icon" />
+          <div class="tooltip">YouTube Apps</div>
+        </div>
 
         <div class="notification-div">
           <img
             src="icons/notifications.svg"
             class="notifications-icon"
-            alt=""
+            alt="Notifications Icon"
           />
-
           <div class="notification-count">3</div>
+          <div class="tooltip">Notifications</div>
         </div>
+
         <img
           src="channel-pictures/my-channel.jpeg"
           class="current-user-picture"
-          alt=""
+          alt="User Profile Picture"
         />
       </div>
     </div>
 
-    <div class="sidebar">sidebar</div>
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" class="sidebar-icon" alt="Home Icon" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" class="sidebar-icon" alt="Explore Icon" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          src="icons/subscriptions.svg"
+          class="sidebar-icon"
+          alt="Subscriptions Icon"
+        />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          src="icons/originals.svg"
+          class="sidebar-icon"
+          alt="Originals Icon"
+        />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          src="icons/youtube-music.svg"
+          class="sidebar-icon"
+          alt="YouTube Music Icon"
+        />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" class="sidebar-icon" alt="Library Icon" />
+        <div>Library</div>
+      </div>
+    </div>
 
     <div class="video-grid">
       <!-- video-1 -->
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img src="thumbnails/image.png" alt="" class="thumbnail" />
+          <img src="thumbnails/image.png" alt="Video Thumbnail" class="thumbnail" />
           <div class="video-time">10:35</div>
         </div>
 
@@ -83,7 +130,7 @@
             <img
               class="profile-picture"
               src="channel-pictures/channel1.jpg"
-              alt=""
+              alt="Channel Picture"
             />
           </div>
 
@@ -100,7 +147,7 @@
       <!-- video-2 -->
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-2.webp" alt="" class="thumbnail" />
+          <img src="thumbnails/thumbnail-2.webp" alt="Video Thumbnail" class="thumbnail" />
           <div class="video-time">15:45</div>
         </div>
 
@@ -109,7 +156,7 @@
             <img
               class="profile-picture"
               src="channel-pictures/channel-2.jpeg"
-              alt=""
+              alt="Channel Picture"
             />
           </div>
 
@@ -124,7 +171,7 @@
       <!-- video-3 -->
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-3.webp" alt="" class="thumbnail" />
+          <img src="thumbnails/thumbnail-3.webp" alt="Video Thumbnail" class="thumbnail" />
           <div class="video-time">8:22</div>
         </div>
 
@@ -133,7 +180,7 @@
             <img
               class="profile-picture"
               src="channel-pictures/channel-3.jpeg"
-              alt=""
+              alt="Channel Picture"
             />
           </div>
 
@@ -150,7 +197,7 @@
       <!-- video-4 -->
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-4.webp" alt="" class="thumbnail" />
+          <img src="thumbnails/thumbnail-4.webp" alt="Video Thumbnail" class="thumbnail" />
           <div class="video-time">12:10</div>
         </div>
 
@@ -159,7 +206,7 @@
             <img
               class="profile-picture"
               src="channel-pictures/channel-4.jpeg"
-              alt=""
+              alt="Channel Picture"
             />
           </div>
 
@@ -176,7 +223,7 @@
       <!-- video-5 -->
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-5.webp" alt="" class="thumbnail" />
+          <img src="thumbnails/thumbnail-5.webp" alt="Video Thumbnail" class="thumbnail" />
           <div class="video-time">7:30</div>
         </div>
 
@@ -185,7 +232,7 @@
             <img
               class="profile-picture"
               src="channel-pictures/channel-5.jpeg"
-              alt=""
+              alt="Channel Picture"
             />
           </div>
 
@@ -202,7 +249,7 @@
       <!-- video-6 -->
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-6.webp" alt="" class="thumbnail" />
+          <img src="thumbnails/thumbnail-6.webp" alt="Video Thumbnail" class="thumbnail" />
           <div class="video-time">14:50</div>
         </div>
 
@@ -211,7 +258,7 @@
             <img
               class="profile-picture"
               src="channel-pictures/channel-6.jpeg"
-              alt=""
+              alt="Channel Picture"
             />
           </div>
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        position: relative;
+        width: 300px;
+      }
+
+      .shirt {
+        width: 100%;
+      }
+      .discount {
+        position: absolute;
+
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 2px 5px;
+        font-weight: bold;
+      }
+      .shadow {
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* z-index: 100; */
+        background-color: rgba(255, 255, 255, 0.6);
+        height: 90px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .add-to-cart-button {
+        padding: 5px 10px;
+        background-color: #d3d3d3;
+
+    
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="shirt" src="shirt.jpg" alt="" />
+
+      <div class="discount">20% OFF</div>
+
+      <div class="shadow">
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

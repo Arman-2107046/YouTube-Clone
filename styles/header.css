@@ -16,8 +16,12 @@
     border-bottom-width: 1px;
     border-bottom-color: rgb(206, 206, 206);
     border-bottom-style: solid ;
+    
+    z-index: 100;
 
 }
+
+
 .left-section{
 
     display: flex;
@@ -118,4 +122,24 @@ margin-top: 4px;
 .current-user-picture{
     height: 32px;
     border-radius: 16px;
+}
+
+.notification-div{
+
+    position: relative;
+}
+
+.notification-count{
+position: absolute;
+
+top: -2px;
+right:-1px;
+
+
+background-color: rgb(205, 0, 0);
+color: white;
+font-family: Arial;
+font-size: 11px;
+padding: 2px 5px;
+border-radius: 10px;
 }

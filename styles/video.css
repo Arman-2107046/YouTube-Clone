@@ -1,128 +1,140 @@
 body {
-  font-family: Arial;
+  font-family: Roboto, Arial; /* Sets the default font for the entire page */
 }
+
 .thumbnail {
-  width: 100%;
+  width: 100%; /* Ensures thumbnails take the full width of their container */
 }
+
 .video-preview {
-  /* position: relative; */
+  /* position: relative; */ /* (Commented out) Could be used to position child elements absolutely */
 }
 
 .channel-picture {
-  width: 40px;
-  vertical-align: top;
-  position: relative;
+  width: 40px; /* Sets the size of the channel profile picture */
+  vertical-align: top; /* Aligns it to the top */
+  position: relative; /* Needed for absolute positioning of tooltip */
 }
+
 .video-info {
-  width: 200px;
+  width: 200px; /* Limits the width of the video details section */
 }
+
 .profile-picture {
-  width: 100%;
-  border-radius: 40px;
-  margin-right: 10px;
+  width: 100%; /* Ensures profile pictures are fully responsive */
+  border-radius: 40px; /* Makes profile pictures circular */
+  margin-right: 10px; /* Adds spacing to the right */
 }
+
 .video-title {
-  margin-top: 0px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 10px;
+  margin-top: 0px; /* Removes extra spacing above the title */
+  font-size: 14px; /* Sets the font size */
+  font-weight: 500; /* Makes the text slightly bold */
+  line-height: 20px; /* Adjusts spacing between lines */
+  margin-bottom: 10px; /* Adds spacing below the title */
 }
+
 .thumbnail-row {
-  margin-bottom: 8px;
-  position: relative;
+  margin-bottom: 8px; /* Adds spacing below each thumbnail row */
+  position: relative; /* Ensures child elements with absolute positioning stay within this container */
 }
 
 .video-time {
-  position: absolute;
-  background-color: black;
-  color: white;
-  right: 5px;
-  bottom: 10px;
-
-  font-family: Roboto, Arial;
-  font-size: 12px;
-  font-weight: 500;
-
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-
-  border-radius: 2px;
+  position: absolute; /* Positions it relative to the thumbnail */
+  background-color: black; /* Sets a black background */
+  color: white; /* Makes the text white */
+  right: 5px; /* Positions it from the right */
+  bottom: 10px; /* Positions it from the bottom */
+  font-family: Roboto, Arial; /* Ensures font consistency */
+  font-size: 12px; /* Sets a smaller font size */
+  font-weight: 500; /* Makes the text slightly bold */
+  padding: 4px; /* Adds padding around the text */
+  border-radius: 2px; /* Rounds the corners slightly */
 }
 
 .video-author {
-  font-size: 12px;
-  color: rgb(96, 96, 96);
-  margin-bottom: 8px;
+  font-size: 12px; /* Sets a smaller font size */
+  color: rgb(96, 96, 96); /* Makes the text gray */
+  margin-bottom: 8px; /* Adds spacing below */
 }
+
 .video-stats {
-  font-size: 12px;
-  color: rgb(96, 96, 96);
-  margin-bottom: 4px;
+  font-size: 12px; /* Sets the font size */
+  color: rgb(96, 96, 96); /* Sets text color */
+  margin-bottom: 4px; /* Adds a small margin below */
 }
+
 .video-info-grid {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  /* position: relative; */
+  display: grid; /* Uses grid layout */
+  grid-template-columns: 50px 1fr; /* Allocates space: first column 50px, second takes remaining space */
 }
+
 .video-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 40px;
+  display: grid; /* Uses grid layout for videos */
+  grid-template-columns: 1fr 1fr 1fr; /* Default: 3 columns */
+  column-gap: 16px; /* Space between columns */
+  row-gap: 40px; /* Space between rows */
 }
 
-.channel-tooltip{
-  /* width: 200px;
-  height: 70px; */
-  padding: 8px;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  z-index: 1000;
-
-  bottom: -25px;
-  border-radius: 6px;
-  
-  box-shadow: 1px 1px 10px rgba(0,0,0,.15);
-
-  display: flex;
-  flex-direction: row;
-justify-content: center;
-align-items: center;
-
-white-space: nowrap;
-
-pointer-events: none;
-opacity: 0;
-transition: opacity 0.3s ease-in-out;
-
-}
-.channel-picture:hover .channel-tooltip{
-  opacity: 1;
+/* Responsive design for smaller screens */
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns on small screens */
+  }
 }
 
-
-/* .channel-picture */
-.tooltip-channel-picture img{
-height: 50px;
-width: 50px;
-object-fit: cover;
-object-position: center;
-
-border-radius: 25px;
-
-
-}
-.tooltip-channel-name{
-margin-left: 5px;
-font-weight: bold;
-color: black;
+/* Medium screen layout */
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns on medium screens */
+  }
 }
 
-.tooltip-channel-subscriber{
-  margin-left: 5px;
-  color: gray;
+/* Large screens layout */
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns on large screens */
+  }
+}
 
+.channel-tooltip {
+  padding: 8px; /* Adds padding inside the tooltip */
+  background-color: rgb(255, 255, 255); /* Sets a white background */
+  position: absolute; /* Positions it relative to .channel-picture */
+  z-index: 1000; /* Ensures it appears on top of other elements */
+  bottom: -25px; /* Positions it below the channel picture */
+  border-radius: 6px; /* Rounds the corners */
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.15); /* Adds a subtle shadow */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: row; /* Arranges items in a row */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  white-space: nowrap; /* Prevents text from wrapping */
+  pointer-events: none; /* Makes it non-clickable */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Show tooltip on hover */
+.channel-picture:hover .channel-tooltip {
+  opacity: 1; /* Makes the tooltip visible */
+}
+
+.tooltip-channel-picture img {
+  height: 50px; /* Sets image height */
+  width: 50px; /* Sets image width */
+  object-fit: cover; /* Ensures image fills the container without distortion */
+  object-position: center; /* Centers the image */
+  border-radius: 25px; /* Makes the image circular */
+}
+
+.tooltip-channel-name {
+  margin-left: 5px; /* Adds spacing from the image */
+  font-weight: bold; /* Makes the text bold */
+  color: black; /* Sets the text color */
+}
+
+.tooltip-channel-subscriber {
+  margin-left: 5px; /* Adds spacing */
+  color: gray; /* Sets text color */
 }

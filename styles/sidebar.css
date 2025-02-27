@@ -1,36 +1,43 @@
-.sidebar{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 55px;
-    background-color: white;
-    width: 72px;
-    z-index: 200;
-    padding-top: 5px;
-    
-}
-
-.sidebar-link{
-   height: 74px;
-   /* margin-bottom: 1px;  */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   cursor: pointer;
-}
-
-.sidebar-link:hover{
-    background-color: rgb(243, 243, 243);
-}
-
-.sidebar-link img{
-    height: 24px;
-    margin-bottom: 4px;
-}
-
-.sidebar-link div{
-    font-family: Roboto,Arial;
-    font-size: 10px;
-
-}
+/* Set the default font family for the entire body */
+body {
+    font-family: Roboto, Arial;
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    position: fixed; /* Fix the sidebar to the viewport */
+    left: 0; /* Position at the left edge */
+    bottom: 0; /* Position at the bottom edge */
+    top: 55px; /* Position 55px from the top (below the header) */
+    background-color: white; /* Set the background color */
+    width: 72px; /* Set the width */
+    z-index: 200; /* Ensure the sidebar is above other content */
+    padding-top: 5px; /* Add padding at the top */
+  }
+  
+  /* Style each link in the sidebar */
+  .sidebar-link {
+    height: 74px; /* Set the height */
+    /* margin-bottom: 1px;  */ /* Uncomment to add space between links */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Arrange children in a column */
+    cursor: pointer; /* Change cursor to indicate clickable */
+  }
+  
+  /* Change background color on hover */
+  .sidebar-link:hover {
+    background-color: rgb(243, 243, 243); /* Light gray background on hover */
+  }
+  
+  /* Style images within sidebar links */
+  .sidebar-link img {
+    height: 24px; /* Set the height */
+    margin-bottom: 4px; /* Add space below the image */
+  }
+  
+  /* Style text within sidebar links */
+  .sidebar-link div {
+    font-size: 10px; /* Set the font size */
+  }
